@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesahack Agencies - Earn Money Online in Kenya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2E8B57;
+            --secondary: #FFD700;
+            --dark: #1a3c27;
+            --light: #f5f5f5;
+            --text: #333;
+            --bg: #f9f9f9;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] {
+            --primary: #3cb371;
+            --secondary: #ffcc00;
+            --dark: #0f2316;
+            --light: #2d2d2d;
+            --text: #f0f0f0;
+            --bg: #1a1a1a;
+            --card-bg: #2a2a2a;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: var(--transition);
+        }
+        
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary);
+            color: var(--dark);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        
+        .btn-copy {
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            margin-left: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .btn-copy:hover {
+            background-color: var(--dark);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(46, 139, 87, 0.9), rgba(46, 139, 87, 0.8)), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn-hero {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 12px 30px;
+            font-size: 1.1rem;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 5rem 0;
+            background-color: var(--card-bg);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .section-title p {
+            color: var(--text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            padding: 5rem 0;
+            background-color: var(--bg);
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 0 1rem;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 25px;
+            right: -10px;
+            width: 50%;
+            height: 2px;
+            background-color: var(--primary);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 0;
+            background-color: var(--card-bg);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background-color: var(--bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: var(--shadow);
+            color: var(--text);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        
+        textarea.form-control {
+            min-height: 100px;
+            resize: vertical;
+        }
+        
+        .copyable-field {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .copyable-field span {
+            font-weight: bold;
+            background-color: var(--bg);
+            padding: 5px 10px;
+            border-radius: 4px;
+            flex-grow: 1;
+        }
+        
+        /* Dashboard Styles */
+        .dashboard {
+            display: none;
+            min-height: 100vh;
+            background-color: var(--bg);
+        }
+        
+        .dashboard-header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+        }
+        
+        .dashboard-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .user-avatar {
+            width: 50px;
+            height: 50px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark);
+            font-weight: bold;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            list-style: none;
+            gap: 1rem;
+        }
+        
+        .nav-tabs li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-tabs li a.active, .nav-tabs li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .dashboard-content {
+            padding: 2rem 0;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 0.5rem 0;
+        }
+        
+        .tasks-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .task-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .task-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .task-reward {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .task-actions {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .payment-info {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .payment-details {
+            background-color: var(--bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        
+        .payment-details p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .copy-notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            box-shadow: var(--shadow);
+            z-index: 1001;
+            display: none;
+        }
+        
+        .sample-message {
+            background-color: var(--bg);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid var(--primary);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            .steps {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .step:not(:last-child)::after {
+                display: none;
+            }
+            
+            .dashboard-nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-tabs {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .copyable-field {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .btn-copy {
+                margin-left: 0;
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Pesa<span>Hack</span> Agencies</div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="btn btn-outline" id="loginBtn">Login</button>
+                    <button class="btn btn-primary" id="registerBtn">Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Earn Money Online in Kenya with PesaHack</h1>
+            <p>Join thousands of Kenyans earning daily through simple tasks like answering trivia, playing games, and watching videos. Start earning today!</p>
+            <button class="btn btn-hero" id="heroRegisterBtn">Start Earning Now</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Multiple Ways to Earn</h2>
+                <p>We offer various easy methods to make money online from the comfort of your home</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-question-circle"></i></div>
+                    <h3>Answer Trivia Questions</h3>
+                    <p>Test your knowledge and earn money by answering simple trivia questions on various topics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Play Games</h3>
+                    <p>Earn while having fun with our collection of simple games like spins, puzzles, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-video"></i></div>
+                    <h3>Watch Videos</h3>
+                    <p>Get paid for watching short videos, ads, and promotional content from our partners.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-poll"></i></div>
+                    <h3>Complete Surveys</h3>
+                    <p>Share your opinions through surveys and get rewarded for your valuable feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>Start earning in just 4 simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Register</h3>
+                    <p>Create your free account with PesaHack Agencies</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Complete Tasks</h3>
+                    <p>Start earning immediately by completing simple tasks</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Accumulate Earnings</h3>
+                    <p>Watch your balance grow as you complete more tasks</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Withdraw Earnings</h3>
+                    <p>Cash out your earnings through M-Pesa or other payment methods</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Users Say</h2>
+                <p>Hear from Kenyans who are already earning with PesaHack</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "I've been using PesaHack for 3 months now and I'm earning at least KES 500 daily. It's helped me pay my bills without stress."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">WK</div>
+                        <div>
+                            <h4>Wanjiku K.</h4>
+                            <p>Nairobi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "As a student, PesaHack has been a lifesaver. I can earn during my free time between classes. The tasks are simple and payment is fast."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JM</div>
+                        <div>
+                            <h4>John M.</h4>
+                            <p>Kisumu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "I was skeptical at first, but after my first withdrawal, I became a believer. Now I refer all my friends to join PesaHack."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AO</div>
+                        <div>
+                            <h4>Alice O.</h4>
+                            <p>Mombasa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PesaHack Agencies</h3>
+                    <p>Your trusted partner for online earning opportunities in Kenya.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Email: info@pesahack.co.ke</li>
+                        <li>Phone: +254 700 000 000</li>
+                        <li>Nairobi, Kenya</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 PesaHack Agencies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Your Account</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login to Your Account</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email or Phone</label>
+                    <input type="text" id="loginEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Complete Registration</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="payment-info">
+                <p>To activate your account and start earning, please pay the one-time commitment fee of <span class="highlight">KES 57</span>.</p>
+                
+                <div class="payment-details">
+                    <h3>Payment Instructions:</h3>
+                    <p>1. Go to M-Pesa on your phone</p>
+                    <p>2. Select <span class="highlight">Lipa Na M-Pesa</span></p>
+                    <p>3. Select <span class="highlight">Pay Bill</span></p>
+                    <p>4. Enter Business Number: 
+                        <div class="copyable-field">
+                            <span id="businessNumber">400200</span>
+                            <button class="btn-copy" data-target="businessNumber">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </p>
+                    <p>5. Enter Account Number: 
+                        <div class="copyable-field">
+                            <span id="accountNumber">01101791245001</span>
+                            <button class="btn-copy" data-target="accountNumber">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                    </p>
+                    <p>6. Enter Amount: <span class="highlight">57</span></p>
+                    <p>7. Enter your M-Pesa PIN and confirm</p>
+                </div>
+                
+                <p>After payment, paste the M-Pesa confirmation message below for verification:</p>
+                
+                </div>
+                
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="mpesaMessage">M-Pesa Message</label>
+                        <textarea id="mpesaMessage" class="form-control" placeholder="Paste the complete M-Pesa message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Verify Payment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copy Notification -->
+    <div class="copy-notification" id="copyNotification">
+        Copied to clipboard!
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard" id="dashboard">
+        <div class="dashboard-header">
+            <div class="container">
+                <div class="dashboard-nav">
+                    <div class="user-info">
+                        <div class="user-avatar" id="userAvatar">JD</div>
+                        <div>
+                            <h2 id="userName">John Doe</h2>
+                            <p id="userStatus">Status: <span id="statusText">Active</span></p>
+                        </div>
+                    </div>
+                    <ul class="nav-tabs">
+                        <li><a href="#dashboard-tab" class="nav-tab active" data-tab="dashboard-tab">Dashboard</a></li>
+                        <li><a href="#trivia-tab" class="nav-tab" data-tab="trivia-tab">Trivia Questions</a></li>
+                        <li><a href="#games-tab" class="nav-tab" data-tab="games-tab">Games</a></li>
+                        <li><a href="#videos-tab" class="nav-tab" data-tab="videos-tab">Videos</a></li>
+                        <li><a href="#surveys-tab" class="nav-tab" data-tab="surveys-tab">Surveys</a></li>
+                        <li><a href="#withdraw-tab" class="nav-tab" data-tab="withdraw-tab">Withdraw</a></li>
+                    </ul>
+                    <div class="header-actions">
+                        <button class="theme-toggle" id="dashboardThemeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <button class="btn btn-outline" id="logoutBtn">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dashboard-content">
+            <div class="container">
+                <!-- Dashboard Tab -->
+                <div id="dashboard-tab" class="tab-content active">
+                    <h2 style="margin-bottom: 1.5rem;">Your Earnings Overview</h2>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3>Total Earnings</h3>
+                            <div class="stat-value" id="totalEarnings">KES 0</div>
+                            <p>Lifetime earnings</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Available Balance</h3>
+                            <div class="stat-value" id="availableBalance">KES 0</div>
+                            <p>Ready to withdraw</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Tasks Completed</h3>
+                            <div class="stat-value" id="tasksCompleted">0</div>
+                            <p>Total completed tasks</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>Referral Earnings</h3>
+                            <div class="stat-value" id="referralEarnings">KES 0</div>
+                            <p>From your referrals</p>
+                        </div>
+                    </div>
+                    
+                    <h2 style="margin: 2rem 0 1rem;">Quick Actions</h2>
+                    <div class="tasks-container">
+                        <div class="task-card">
+                            <div class="task-header">
+                                <h3>Answer Trivia Questions</h3>
+                                <span class="task-reward">KES 5-10</span>
+                            </div>
+                            <p>Test your knowledge with our daily trivia questions. Each correct answer earns you money!</p>
+                            <div class="task-actions">
+                                <button class="btn btn-primary" onclick="switchTab('trivia-tab')">Start Now</button>
+                            </div>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-header">
+                                <h3>Play Games</h3>
+                                <span class="task-reward">KES 3-15</span>
+                            </div>
+                            <p>Earn while having fun! Complete simple games and challenges to add to your balance.</p>
+                            <div class="task-actions">
+                                <button class="btn btn-primary" onclick="switchTab('games-tab')">Play Now</button>
+                            </div>
+                        </div>
+                        <div class="task-card">
+                            <div class="task-header">
+                                <h3>Watch Videos</h3>
+                                <span class="task-reward">KES 2-5</span>
+                            </div>
+                            <p>Watch short videos and ads to earn money. Simple, easy, and you can do it anytime.</p>
+                            <div class="task-actions">
+                                <button class="btn btn-primary" onclick="switchTab('videos-tab')">Watch Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Trivia Questions Tab -->
+                <div id="trivia-tab" class="tab-content">
+                    <h2 style="margin-bottom: 1.5rem;">Trivia Questions</h2>
+                    <p style="margin-bottom: 1.5rem;">Answer these trivia questions correctly to earn money. Each correct answer earns you <span class="highlight">KES 5</span>.</p>
+                    
+                    <div class="tasks-container" id="triviaTasks">
+                        <!-- Trivia tasks will be loaded here -->
+                    </div>
+                </div>
+                
+                <!-- Games Tab -->
+                <div id="games-tab" class="tab-content">
+                    <h2 style="margin-bottom: 1.5rem;">Games</h2>
+                    <p style="margin-bottom: 1.5rem;">Play these simple games to earn money. Complete each game to earn rewards.</p>
+                    
+                    <div class="tasks-container" id="gamesTasks">
+                        <!-- Games tasks will be loaded here -->
+                    </div>
+                </div>
+                
+                <!-- Videos Tab -->
+                <div id="videos-tab" class="tab-content">
+                    <h2 style="margin-bottom: 1.5rem;">Watch Videos</h2>
+                    <p style="margin-bottom: 1.5rem;">Watch these videos to earn money. Each video watched earns you <span class="highlight">KES 2-5</span>.</p>
+                    
+                    <div class="tasks-container" id="videosTasks">
+                        <!-- Video tasks will be loaded here -->
+                    </div>
+                </div>
+                
+                <!-- Surveys Tab -->
+                <div id="surveys-tab" class="tab-content">
+                    <h2 style="margin-bottom: 1.5rem;">Surveys</h2>
+                    <p style="margin-bottom: 1.5rem;">Complete these surveys to earn money. Each survey earns you <span class="highlight">KES 20-50</span>.</p>
+                    
+                    <div class="tasks-container" id="surveysTasks">
+                        <!-- Survey tasks will be loaded here -->
+                    </div>
+                </div>
+                
+                <!-- Withdraw Tab -->
+                <div id="withdraw-tab" class="tab-content">
+                    <h2 style="margin-bottom: 1.5rem;">Withdraw Earnings</h2>
+                    
+                    <div class="payment-info">
+                        <div class="stat-card" style="max-width: 300px; margin: 0 auto 2rem;">
+                            <h3>Available Balance</h3>
+                            <div class="stat-value" id="withdrawBalance">KES 0</div>
+                            <p>Ready to withdraw</p>
+                        </div>
+                        
+                        <p style="text-align: center; margin-bottom: 1.5rem;">Minimum withdrawal amount: <span class="highlight">KES 100</span></p>
+                        
+                        <div class="form-group">
+                            <label for="withdrawAmount">Withdrawal Amount (KES)</label>
+                            <input type="number" id="withdrawAmount" class="form-control" min="100" step="10" value="100">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="withdrawMethod">Withdrawal Method</label>
+                            <select id="withdrawMethod" class="form-control">
+                                <option value="mpesa">M-Pesa</option>
+                                <option value="airtel">Airtel Money</option>
+                                <option value="bank">Bank Transfer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phoneWithdraw">Phone Number (for M-Pesa/Airtel)</label>
+                            <input type="tel" id="phoneWithdraw" class="form-control" placeholder="e.g., 07XXXXXXXX">
+                        </div>
+                        
+                        <button class="btn btn-primary" id="withdrawBtn" style="width: 100%;">Request Withdrawal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const registerBtn = document.getElementById('registerBtn');
+        const loginBtn = document.getElementById('loginBtn');
+        const heroRegisterBtn = document.getElementById('heroRegisterBtn');
+        const registerModal = document.getElementById('registerModal');
+        const loginModal = document.getElementById('loginModal');
+        const paymentModal = document.getElementById('paymentModal');
+        const dashboard = document.getElementById('dashboard');
+        const closeModalButtons = document.querySelectorAll('.close-modal');
+        const registerForm = document.getElementById('registerForm');
+        const loginForm = document.getElementById('loginForm');
+        const paymentForm = document.getElementById('paymentForm');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const withdrawBtn = document.getElementById('withdrawBtn');
+        const themeToggle = document.getElementById('themeToggle');
+        const dashboardThemeToggle = document.getElementById('dashboardThemeToggle');
+        const navTabs = document.querySelectorAll('.nav-tab');
+        const copyButtons = document.querySelectorAll('.btn-copy');
+        const copyNotification = document.getElementById('copyNotification');
+        
+        // User data (in a real app, this would be stored in a database)
+        let currentUser = null;
+        let users = JSON.parse(localStorage.getItem('pesahackUsers')) || [];
+        let tasks = JSON.parse(localStorage.getItem('pesahackTasks')) || generateTasks();
+        
+        // Theme management
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+        
+        // Generate tasks for all categories
+        function generateTasks() {
+            const taskCategories = ['trivia', 'games', 'videos', 'surveys'];
+            const allTasks = {};
+            
+            taskCategories.forEach(category => {
+                allTasks[category] = [];
+                for (let i = 1; i <= 50; i++) {
+                    allTasks[category].push({
+                        id: `${category}-${i}`,
+                        title: getTaskTitle(category, i),
+                        description: getTaskDescription(category, i),
+                        reward: getTaskReward(category),
+                        completed: false
+                    });
+                }
+            });
+            
+            // Set last update to today
+            allTasks.lastUpdate = new Date().toDateString();
+            
+            localStorage.setItem('pesahackTasks', JSON.stringify(allTasks));
+            return allTasks;
+        }
+        
+        function getTaskTitle(category, index) {
+            const titles = {
+                trivia: [
+                    "Capital of Kenya?",
+                    "Largest lake in Africa?",
+                    "First president of Kenya?",
+                    "Currency of Kenya?",
+                    "Year Kenya gained independence?",
+                    "Longest river in Kenya?",
+                    "Highest mountain in Kenya?",
+                    "Official languages of Kenya?",
+                    "Kenya's national animal?",
+                    "Kenya's biggest export?"
+                ],
+                games: [
+                    "Color Match Game",
+                    "Number Puzzle",
+                    "Word Scramble",
+                    "Memory Cards",
+                    "Quick Math Challenge",
+                    "Spot the Difference",
+                    "Pattern Recognition",
+                    "Speed Tap Game",
+                    "Sorting Challenge",
+                    "Reaction Time Test"
+                ],
+                videos: [
+                    "Mobile Banking Ad",
+                    "Health Insurance Promo",
+                    "Cooking Tutorial",
+                    "Tech Product Review",
+                    "Travel Vlog",
+                    "Educational Content",
+                    "Entertainment Clip",
+                    "News Summary",
+                    "Sports Highlights",
+                    "Fashion Trends"
+                ],
+                surveys: [
+                    "Shopping Habits Survey",
+                    "Mobile Usage Patterns",
+                    "Entertainment Preferences",
+                    "Financial Services Feedback",
+                    "Health and Wellness Study",
+                    "Transportation Survey",
+                    "Technology Adoption Research",
+                    "Social Media Usage",
+                    "Environmental Awareness",
+                    "Consumer Brand Perception"
+                ]
+            };
+            
+            const baseTitles = titles[category];
+            return baseTitles[index % baseTitles.length] + ` #${index}`;
+        }
+        
+        function getTaskDescription(category, index) {
+            const descriptions = {
+                trivia: "Answer this trivia question correctly to earn money.",
+                games: "Complete this simple game to earn rewards.",
+                videos: "Watch this video completely to earn money.",
+                surveys: "Complete this survey by providing your honest opinions."
+            };
+            return descriptions[category];
+        }
+        
+        function getTaskReward(category) {
+            const rewards = {
+                trivia: 5,
+                games: Math.floor(Math.random() * 13) + 3, // 3-15
+                videos: Math.floor(Math.random() * 4) + 2, // 2-5
+                surveys: Math.floor(Math.random() * 31) + 20 // 20-50
+            };
+            return rewards[category];
+        }
+        
+        // Check if tasks need to be updated (every day at midnight)
+        function checkTaskUpdate() {
+            const today = new Date().toDateString();
+            if (tasks.lastUpdate !== today) {
+                tasks = generateTasks();
+            }
+        }
+        
+        // Copy to clipboard functionality
+        function copyToClipboard(text) {
+            if (navigator.clipboard && window.isSecureContext) {
+                // Use the modern clipboard API
+                navigator.clipboard.writeText(text).then(() => {
+                    showCopyNotification();
+                }).catch(err => {
+                    // Fallback for older browsers
+                    fallbackCopyToClipboard(text);
+                });
+            } else {
+                // Fallback for older browsers
+                fallbackCopyToClipboard(text);
+            }
+        }
+        
+        function fallbackCopyToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            
+            // Avoid scrolling to bottom
+            textArea.style.top = "0";
+            textArea.style.left = "0";
+            textArea.style.position = "fixed";
+            
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showCopyNotification();
+            } catch (err) {
+                console.error('Fallback: Oops, unable to copy', err);
+            }
+            
+            document.body.removeChild(textArea);
+        }
+        
+        function showCopyNotification() {
+            copyNotification.style.display = 'block';
+            setTimeout(() => {
+                copyNotification.style.display = 'none';
+            }, 2000);
+        }
+        
+        // Show modal functions
+        function showModal(modal) {
+            modal.style.display = 'flex';
+        }
+        
+        function hideModal(modal) {
+            modal.style.display = 'none';
+        }
+        
+        // Switch between tabs in dashboard
+        function switchTab(tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabId).classList.add('active');
+            
+            // Add active class to clicked tab
+            document.querySelector(`[data-tab="${tabId}"]`).classList.add('active');
+            
+            // Load tasks for the tab if needed
+            if (tabId.includes('-tab') && tabId !== 'dashboard-tab' && tabId !== 'withdraw-tab') {
+                loadTasksForTab(tabId);
+            }
+        }
+        
+        // Load tasks for a specific tab
+        function loadTasksForTab(tabId) {
+            const category = tabId.replace('-tab', '');
+            const container = document.getElementById(`${category}Tasks`);
+            
+            if (!container) return;
+            
+            container.innerHTML = '';
+            
+            tasks[category].forEach(task => {
+                const taskElement = document.createElement('div');
+                taskElement.className = 'task-card';
+                taskElement.innerHTML = `
+                    <div class="task-header">
+                        <h3>${task.title}</h3>
+                        <span class="task-reward">KES ${task.reward}</span>
+                    </div>
+                    <p>${task.description}</p>
+                    <div class="task-actions">
+                        <button class="btn ${task.completed ? 'btn-outline' : 'btn-primary'}" 
+                                onclick="completeTask('${task.id}')" 
+                                ${task.completed ? 'disabled' : ''}>
+                            ${task.completed ? 'Completed' : 'Start Task'}
+                        </button>
+                    </div>
+                `;
+                container.appendChild(taskElement);
+            });
+        }
+        
+        // Complete a task and add earnings
+        function completeTask(taskId) {
+            if (!currentUser.paid) {
+                alert('Please complete your payment to start earning!');
+                showModal(paymentModal);
+                return;
+            }
+            
+            const [category, index] = taskId.split('-');
+            const taskIndex = parseInt(index) - 1;
+            
+            if (tasks[category][taskIndex].completed) {
+                alert('You have already completed this task!');
+                return;
+            }
+            
+            // Mark task as completed
+            tasks[category][taskIndex].completed = true;
+            localStorage.setItem('pesahackTasks', JSON.stringify(tasks));
+            
+            // Update user earnings
+            const reward = tasks[category][taskIndex].reward;
+            currentUser.earnings += reward;
+            currentUser.balance += reward;
+            currentUser.tasksCompleted += 1;
+            
+            updateUserData();
+            updateDashboard();
+            loadTasksForTab(`${category}-tab`);
+            
+            alert(`Congratulations! You earned KES ${reward} from completing the task.`);
+        }
+        
+        // Theme toggle functionality
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        }
+        
+        function updateThemeIcon(theme) {
+            const icons = document.querySelectorAll('.theme-toggle i');
+            icons.forEach(icon => {
+                icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+            });
+        }
+        
+        // Event Listeners
+        registerBtn.addEventListener('click', () => showModal(registerModal));
+        loginBtn.addEventListener('click', () => showModal(loginModal));
+        heroRegisterBtn.addEventListener('click', () => showModal(registerModal));
+        
+        closeModalButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const modal = this.closest('.modal');
+                hideModal(modal);
+            });
+        });
+        
+        // Close modal when clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                hideModal(e.target);
+            }
+        });
+        
+        // Copy buttons
+        copyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const textToCopy = document.getElementById(targetId).textContent;
+                copyToClipboard(textToCopy);
+            });
+        });
+        
+        // Register Form Submission
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const fullName = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            // Check if user already exists
+            if (users.find(user => user.email === email || user.phone === phone)) {
+                alert('User with this email or phone already exists!');
+                return;
+            }
+            
+            // Create new user
+            const newUser = {
+                id: Date.now().toString(),
+                fullName,
+                email,
+                phone,
+                password,
+                paid: false,
+                earnings: 0,
+                balance: 0,
+                tasksCompleted: 0,
+                referralEarnings: 0,
+                joinedDate: new Date().toISOString()
+            };
+            
+            users.push(newUser);
+            localStorage.setItem('pesahackUsers', JSON.stringify(users));
+            
+            // Set as current user
+            currentUser = newUser;
+            
+            // Hide register modal and show payment modal
+            hideModal(registerModal);
+            showModal(paymentModal);
+        });
+        
+        // Login Form Submission
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const loginEmail = document.getElementById('loginEmail').value;
+            const loginPassword = document.getElementById('loginPassword').value;
+            
+            // Find user
+            const user = users.find(u => 
+                (u.email === loginEmail || u.phone === loginEmail) && 
+                u.password === loginPassword
+            );
+            
+            if (user) {
+                currentUser = user;
+                hideModal(loginModal);
+                showDashboard();
+                
+                if (!user.paid) {
+                    showModal(paymentModal);
+                }
+            } else {
+                alert('Invalid email/phone or password!');
+            }
+        });
+        
+        // Payment Form Submission (MPesa verification)
+        paymentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const mpesaMessage = document.getElementById('mpesaMessage').value;
+            
+            // Verify the M-Pesa message format and check for correct account number and amount
+            const accountNumberRegex = /01101791245001/;
+            const amountRegex = /Ksh57\.00|Ksh57|57\.00/;
+            
+            if (!accountNumberRegex.test(mpesaMessage)) {
+                alert('Invalid M-Pesa message. Account number does not match. Please check and try again.');
+                return;
+            }
+            
+            if (!amountRegex.test(mpesaMessage)) {
+                alert('Invalid M-Pesa message. Amount is not KES 57. Please check and try again.');
+                return;
+            }
+            
+            // Check if the date is current (basic check)
+            const today = new Date();
+            const todayFormatted = `${today.getDate()}/${today.getMonth()+1}/${today.getFullYear()}`;
+            
+            if (!mpesaMessage.includes(todayFormatted)) {
+                if (!confirm('The payment date does not appear to be today. Continue anyway?')) {
+                    return;
+                }
+            }
+            
+            // Update user payment status
+            currentUser.paid = true;
+            updateUserData();
+            
+            alert('Payment verified successfully! Your account is now active.');
+            hideModal(paymentModal);
+            updateDashboard();
+        });
+        
+        // Logout
+        logoutBtn.addEventListener('click', () => {
+            currentUser = null;
+            dashboard.style.display = 'none';
+            document.querySelector('header').style.display = 'block';
+            document.querySelectorAll('section').forEach(section => section.style.display = 'block');
+            document.querySelector('footer').style.display = 'block';
+        });
+        
+        // Withdraw Earnings
+        withdrawBtn.addEventListener('click', () => {
+            const amount = parseInt(document.getElementById('withdrawAmount').value);
+            const method = document.getElementById('withdrawMethod').value;
+            const phone = document.getElementById('phoneWithdraw').value;
+            
+            if (amount < 100) {
+                alert('Minimum withdrawal amount is KES 100');
+                return;
+            }
+            
+            if (amount > currentUser.balance) {
+                alert('Insufficient balance for this withdrawal');
+                return;
+            }
+            
+            if ((method === 'mpesa' || method === 'airtel') && !phone) {
+                alert('Please provide your phone number for this withdrawal method');
+                return;
+            }
+            
+            if (confirm(`Request withdrawal of KES ${amount} via ${method.toUpperCase()}?`)) {
+                currentUser.balance -= amount;
+                updateUserData();
+                updateDashboard();
+                
+                alert(`Withdrawal request for KES ${amount} submitted successfully! Funds will be processed within 24 hours.`);
+                document.getElementById('withdrawAmount').value = Math.max(100, currentUser.balance);
+            }
+        });
+        
+        // Theme toggles
+        themeToggle.addEventListener('click', toggleTheme);
+        dashboardThemeToggle.addEventListener('click', toggleTheme);
+        
+        // Navigation tabs
+        navTabs.forEach(tab => {
+            tab.addEventListener('click', function(e) {
+                e.preventDefault();
+                switchTab(this.getAttribute('data-tab'));
+            });
+        });
+        
+        // Update user data in localStorage
+        function updateUserData() {
+            const userIndex = users.findIndex(u => u.id === currentUser.id);
+            if (userIndex !== -1) {
+                users[userIndex] = currentUser;
+                localStorage.setItem('pesahackUsers', JSON.stringify(users));
+                localStorage.setItem('pesahackLastUser', currentUser.id);
+            }
+        }
+        
+        // Show dashboard
+        function showDashboard() {
+            document.querySelector('header').style.display = 'none';
+            document.querySelectorAll('section').forEach(section => section.style.display = 'none');
+            document.querySelector('footer').style.display = 'none';
+            dashboard.style.display = 'block';
+            
+            updateDashboard();
+        }
+        
+        // Update dashboard with user data
+        function updateDashboard() {
+            document.getElementById('userName').textContent = currentUser.fullName;
+            document.getElementById('userAvatar').textContent = 
+                currentUser.fullName.split(' ').map(n => n[0]).join('').toUpperCase();
+            
+            document.getElementById('statusText').textContent = currentUser.paid ? 'Active' : 'Pending Payment';
+            document.getElementById('statusText').style.color = currentUser.paid ? 'lightgreen' : 'orange';
+            
+            document.getElementById('totalEarnings').textContent = `KES ${currentUser.earnings}`;
+            document.getElementById('availableBalance').textContent = `KES ${currentUser.balance}`;
+            document.getElementById('withdrawBalance').textContent = `KES ${currentUser.balance}`;
+            document.getElementById('tasksCompleted').textContent = currentUser.tasksCompleted;
+            document.getElementById('referralEarnings').textContent = `KES ${currentUser.referralEarnings}`;
+            
+            // Set withdraw amount to balance if it's more than 100
+            if (currentUser.balance >= 100) {
+                document.getElementById('withdrawAmount').value = currentUser.balance;
+            }
+        }
+        
+        // Check if user is already logged in
+        window.addEventListener('DOMContentLoaded', () => {
+            checkTaskUpdate();
+            
+            // In a real app, you would check for an active session
+            // For demo purposes, we'll check if there's a user in localStorage
+            const lastUserId = localStorage.getItem('pesahackLastUser');
+            if (lastUserId) {
+                const user = users.find(u => u.id === lastUserId);
+                if (user) {
+                    currentUser = user;
+                    showDashboard();
+                    
+                    if (!user.paid) {
+                        showModal(paymentModal);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
